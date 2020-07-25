@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/20 15:31:51.000.242,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/20 15:51:04.000.234,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/20 15:53:17.000.698,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/20 15:54:37.000.663,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/20 15:56:47.000.573,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/20 16:10:08.000.744,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/20 16:24:20.000.054,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/20 16:35:03.000.224,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 14:03:41.000.638,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 14:18:36.000.863,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 14:21:23.000.824,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 14:52:24.000.181,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 14:52:58.000.256,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 14:53:43.000.498,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 15:19:01.000.282,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 15:27:24.000.184,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/21 15:58:33.000.180,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/03/02 08:27:42.000.975,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/03/02 08:31:33.000.341,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/11 08:40:55.000.509,=D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/11 08:41:46.000.574,D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Dev\Projetos\Omnium\Source\Whatsapp\uFrmPrincipal.dfm</Transaction>
+    <Transaction>2020/05/11 08:41:46.000.574,D:\Belizario\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Dev\Projetos\Omnium\Source\Whatsapp\uFrmPrincipal.pas</Transaction>
+    <Transaction>2020/05/11 08:42:00.000.826,D:\Belizario\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Dev\Projetos\Omnium\Source\Whatsapp\Whatsapp.dproj</Transaction>
+    <Transaction>2020/05/11 09:29:51.000.078,=D:\Dev\Projetos\Shared\Whatsapp.pas</Transaction>
+    <Transaction>2020/05/11 09:30:31.000.180,D:\Dev\Projetos\Omnium\Source\Whatsapp\Whatsapp.dproj=D:\Dev\Projetos\Omnium\Source\Whatsapp\WhatsappEnvMens.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
