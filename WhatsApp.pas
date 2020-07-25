@@ -34,7 +34,7 @@ begin
   if IsApp then
     Result := WT_APP_LINK + WT_TEXT_MSG_PARAM + '=' + Text + '&' + WT_PHONE_PARAM + '=' + Phone
   else
-    Result := WT_WEB_LINK + WT_TEXT_MSG_PARAM + '=' + Text + '&' + WT_PHONE_PARAM + '=' + Phone;
+    Result := WT_WEB_LINK + WT_TEXT_MSG_PARAM + '=' + Text + IfThen(Phone = '', '', '&' + WT_PHONE_PARAM + '=' + Phone);
 end;
 
 class function TWhatsApp.GetNumbers(const Str: String): String;
@@ -102,7 +102,7 @@ var
 begin
   if Length(Trim(Text)) = 0 then
     raise Exception.Create('There is no text message to send.');
-  vTreatedPhoneNumber := '+' + IntToStr(CountryCode) + GetNumbers(PhoneNumber);
+  vTreatedPhoneNumber := '+' + IfThen(GetNumbers(PhoneNumber) = '', '', IntToStr(CountryCode)) + GetNumbers(PhoneNumber);
   vTreatedMessage := TNetEncoding.URL.Encode(Text);
 
   vPath := GetWhatsAppPath;
