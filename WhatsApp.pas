@@ -1,8 +1,8 @@
 unit WhatsApp;
 
-// BIBLIOTECA DE FUN«’ES DESEVOLVIDA POR VALTER PATRICK SILVA FERREIRA EM 11/05/2020 - valterpatrick@hotmail.com
-// Refatorada e adicionada opÁ„o de envio direto para App e Web em 24/07/2020 por Beliz·rio G. Ribeiro Filho - belizariogr@gmail.com
-// Vers„o 2.0
+// BIBLIOTECA DE FUN√á√ïES DESEVOLVIDA POR VALTER PATRICK SILVA FERREIRA EM 11/05/2020 - valterpatrick@hotmail.com
+// Refatorada e adicionada op√ß√£o de envio direto para App e Web em 24/07/2020 por Beliz√°rio G. Ribeiro Filho - belizariogr@gmail.com
+// Vers√£o 2.0
 
 interface
 
@@ -32,9 +32,9 @@ implementation
 class function TWhatsApp.GetLink(const Phone, Text: String; IsApp: Boolean): String;
 begin
   if IsApp then
-    Result := WT_APP_LINK + WT_TEXT_MSG_PARAM + '=' + Text + '&' + WT_PHONE_PARAM + '=' + Phone
+    Result := WT_APP_LINK + WT_TEXT_MSG_PARAM + '=' + Text + IfThen(Phone.Trim = '', '', '&' + WT_PHONE_PARAM + '=' + Phone)
   else
-    Result := WT_WEB_LINK + WT_TEXT_MSG_PARAM + '=' + Text + IfThen(Phone = '', '', '&' + WT_PHONE_PARAM + '=' + Phone);
+    Result := WT_WEB_LINK + WT_TEXT_MSG_PARAM + '=' + Text + IfThen(Phone.Trim = '', '', '&' + WT_PHONE_PARAM + '=' + Phone);
 end;
 
 class function TWhatsApp.GetNumbers(const Str: String): String;
@@ -102,7 +102,7 @@ var
 begin
   if Length(Trim(Text)) = 0 then
     raise Exception.Create('There is no text message to send.');
-  vTreatedPhoneNumber := '+' + IfThen(GetNumbers(PhoneNumber) = '', '', IntToStr(CountryCode)) + GetNumbers(PhoneNumber);
+  vTreatedPhoneNumber := IfThen(PhoneNumber.Trim = '', '', '+' + IntToStr(CountryCode) + GetNumbers(PhoneNumber));
   vTreatedMessage := TNetEncoding.URL.Encode(Text);
 
   vPath := GetWhatsAppPath;
